@@ -1,0 +1,43 @@
+.header-container {
+  background-color: #003151;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  z-index: 9999;
+
+  padding: 12px 24px; /* Reduced padding */
+  height: 60px;        /* Optional fixed height */
+}
+
+.logo {
+  font-size: 1.2rem;     /* Smaller logo text */
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;             /* Slight gap between links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ccc;
+}
