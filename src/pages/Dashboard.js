@@ -109,7 +109,7 @@ function Dashboard() {
 
           <form className="preferences" onSubmit={handleApplyFilter}>
             <select name="ageRange" value={filters.ageRange} onChange={handleChange}>
-              <option value="" disabled hidden>Age-Range</option>
+              <option value="" disabled >Age-Range</option>
               <option value="18-21">18-21</option>
               <option value="22-25">22-25</option>
               <option value="26-29">26-29</option>
@@ -117,60 +117,60 @@ function Dashboard() {
             </select>
 
             <select name="gender" value={filters.gender} onChange={handleChange}>
-              <option value="" disabled hidden>Gender</option>
+              <option value="" disabled >Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
 
             <select name="pet" value={filters.pet} onChange={handleChange}>
-              <option value="" disabled hidden>Pets</option>
+              <option value="" disabled >Pets</option>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
             </select>
 
             <select name="lateNights" value={filters.lateNights} onChange={handleChange}>
-              <option value="" disabled hidden>Late Nights</option>
+              <option value="" disabled >Late Nights</option>
               <option value="Yes">Yes</option>
               <option value="Sometimes">Sometimes</option>
               <option value="No">No</option>
             </select>
 
             <select name="smoking" value={filters.smoking} onChange={handleChange}>
-              <option value="" disabled hidden>Smoking</option>
+              <option value="" disabled >Smoking</option>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
             </select>
 
             <select name="drinking" value={filters.drinking} onChange={handleChange}>
-              <option value="" disabled hidden>Drinking</option>
+              <option value="" disabled >Drinking</option>
               <option value="Yes">Yes</option>
               <option value="Sometimes">Sometimes</option>
               <option value="No">No</option>
             </select>
 
             <select name="guestsPolicy" value={filters.guestsPolicy} onChange={handleChange}>
-              <option value="" disabled hidden>Guests Policy</option>
+              <option value="" disabled >Guests Policy</option>
               <option value="Often">Often</option>
               <option value="Very Often">Very Often</option>
               <option value="Rarely">Rarely</option>
             </select>
 
             <select name="noiseTolerance" value={filters.noiseTolerance} onChange={handleChange}>
-              <option value="" disabled hidden>Noise Tolerance</option>
+              <option value="" disabled >Noise Tolerance</option>
               <option value="Low">Low</option>
               <option value="Medium">Medium</option>
               <option value="High">High</option>
             </select>
 
             <select name="religion" value={filters.religion} onChange={handleChange}>
-              <option value="" disabled hidden>Religion</option>
+              <option value="" disabled >Religion</option>
               <option value="Christian">Christian</option>
               <option value="Muslim">Muslim</option>
               <option value="Others">Others</option>
             </select>
 
             <select name="occupation" value={filters.occupation} onChange={handleChange}>
-              <option value="" disabled hidden>Occupation</option>
+              <option value="" disabled >Occupation</option>
               <option value="Student">Student</option>
               <option value="Worker">Worker</option>
             </select>
