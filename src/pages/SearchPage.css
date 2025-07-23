@@ -1,0 +1,269 @@
+/* === Reset + Global Styles === */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+/* === Main Container === */
+.search-containers {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* === Main Content === */
+.search-contents {
+  flex: 1;
+  padding: 100px 16px 16px;
+  box-sizing: border-box;
+}
+
+/* === Page Title === */
+.titles {
+  color: #0e4c92;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* === Preferences Section === */
+.preferencess {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ flex-wrap:wrap;
+}
+
+.filters {
+  color: white;
+}
+
+.resets {
+  color: white;
+  background-color: #e63e1f;
+  border: none;
+}
+
+/* === Listings Grid === */
+.results-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* or flex-start */
+  gap: 25px;
+  margin-top: 40px;
+  margin-inline: 60px;
+}
+
+/* === Individual Listing Card === */
+.result-cards{
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  padding-bottom: 15px;
+}
+
+.result-cards:hover {
+  transform: scale(1.03);
+}
+
+.result-cards img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top center; /* show faces more naturally */
+  border-radius: 8px;
+}
+
+/* === Name Text === */
+.name-labels {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* === Connect Button === */
+.connect-btns {
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.connect-btns:hover {
+  background-color: #005fa3;
+}
+
+/* === More Options Section === */
+.more-options {
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.more-options-titles {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.more-options-grids {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.option-cards {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.option-cards:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.option-cards h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* === Help & Support === */
+.support-link-bottoms {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.center-supports {
+  display: flex;
+  justify-content: center;
+}
+
+.action-cards {
+  display: inline-block;
+  background-color: #ff4b2b;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.action-cards:hover {
+  background-color: #e63e1f;
+}
+
+/* Blurring effect on background */
+.search-containers .modal-actives {
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+/* Modal overlay */
+.modal-overlays {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-contents {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-conts
+
+/* === Listings Grid === */
+.results-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* or flex-start */
+  gap: 25px;
+  margin-top: 40px;
+  margin-inline: 60px;
+}
+ent img {
+  max-height: 50vh; /* Half the viewport height */
+  width: auto; /* Scale width proportionally */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto 15px auto; /* Center the image */
+  border-radius: 10px;
+  object-fit: contain; /* Prevent cropping */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Clickable image */
+.clickable-imgs {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.clickable-imgs:hover {
+  transform: scale(1.03);
+}
+
+.modal-headers {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.favorite-icons,
+.close-icons {
+  cursor: pointer;
+  font-size: 1.5rem;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.favorite-icons:hover,
+.close-icons:hover {
+  transform: scale(1.2);
+}
